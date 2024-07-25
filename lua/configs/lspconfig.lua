@@ -14,3 +14,31 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+require'lspconfig'.volar.setup{
+            filetypes = { "vue", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+            init_options = {
+              vue = {
+                hybridMode = false,
+              },
+              typescript = {
+                tsdk = vim.fn.getcwd() .. "/node_modules/typescript/lib",
+              },
+            },
+          }
+
+require'lspconfig'.tsserver.setup{
+  init_options = {
+    plugins = {
+      {
+        name = "@vue/typescript-plugin",
+        location = "/usr/local/lib/node_modules/@vue/typescript-plugin",
+        languages = {"javascript", "typescript", "vue"},
+      },
+    },
+  },
+  filetypes = {
+    "javascript",
+    "typescript",
+  },
+}

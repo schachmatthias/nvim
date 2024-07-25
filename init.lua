@@ -52,10 +52,6 @@ vim.api.nvim_create_autocmd('BufWritePre', {
   command = 'silent! EslintFixAll',
 })
 
- 
-
-
-
 require 'lspconfig'.eslint.setup {
   filetypes = {
     "javascript",
