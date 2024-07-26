@@ -1,3 +1,5 @@
+local overrides = require "configs/overrides"
+
 return {
   {
     "stevearc/conform.nvim",
@@ -36,6 +38,11 @@ return {
         require("codeium").setup({
         })
     end
+  },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = overrides.nvimtree,
   },
 
   -- {
