@@ -5,9 +5,10 @@
 - Eslint Autofix, TypeScript, Supermaven Autocomplete AI
 - NvChad
 - Nvim-tree
+- Nvim-cmp
+- Nvim treesitter
+- LuaSnip
 - Telescope
 - LSP
 - LSP Diagnostics
 - LSP Installer
-- LSP Diagnostics
-- LSP Diagnostics
