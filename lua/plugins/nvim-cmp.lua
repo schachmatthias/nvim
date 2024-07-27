@@ -14,7 +14,7 @@ return {
     end, { desc = "Options | Toggle Autocomplete" })
   end,
   config = function(_, opts)
-    table.insert(opts.sources, 1, { name = "codeium" })
+    table.insert(opts.sources, 2, { name = "codeium" })
     -- table.insert(opts.sources, 1, { name = "supermaven" })
 
     opts.mapping = vim.tbl_extend("force", {}, opts.mapping, {
@@ -85,20 +85,20 @@ return {
         enable_chat = true,
       },
     },
-    {
-      "supermaven-inc/supermaven-nvim",
-      -- commit = "df3ecf7",
-      event = "User FilePost",
-      opts = {
-        disable_keymaps = false,
-        disable_inline_completion = false,
-        keymaps = {
-          accept_suggestion = "<C-;>",
-          clear_suggestion = "<Nop>",
-          accept_word = "<C-y>",
-        },
-      },
-    },
+    -- {
+    --  "supermaven-inc/supermaven-nvim",
+    --   -- commit = "df3ecf7",
+    --   event = "User FilePost",
+    --   opts = {
+    --     disable_keymaps = false,
+    --     disable_inline_completion = false,
+    --     keymaps = {
+    --       accept_suggestion = "<C-;>",
+    --       clear_suggestion = "<Nop>",
+    --       accept_word = "<C-y>",
+    --     },
+    --   },
+    -- },
     {
       "L3MON4D3/LuaSnip",
       dependencies = "rafamadriz/friendly-snippets",
