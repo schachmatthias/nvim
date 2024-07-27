@@ -2,13 +2,14 @@
 
 ### Core Features
 
-- Eslint Autofix, TypeScript, Supermaven Autocomplete AI
+- Eslint Autofix, 
+- TypeScript, 
+- Codeium AI
+- Auto Sessions
 - NvChad
 - Nvim-tree
 - Nvim-cmp
 - Nvim treesitter
 - LuaSnip
-- Telescope
-- LSP
-- LSP Diagnostics
-- LSP Installer
+
+By default I set all plugins to lazy = true. Which means when adding new plugins which should load directly in this project set `lazy = false` for specific plugin.

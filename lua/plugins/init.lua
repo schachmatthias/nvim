@@ -19,25 +19,18 @@ return {
   },
   --
   {
-  	"williamboman/mason.nvim",
-  	opts = {
-  		ensure_installed = {
-  			"lua-language-server", "stylua",
-  			"html-lsp", "css-lsp" , "prettier", "typescript-language-server", "eslint-lsp"
-  		},
-  	},
-  },
-
-{
-    "Exafunction/codeium.nvim",
-    requires = {
-        "nvim-lua/plenary.nvim",
-        "hrsh7th/nvim-cmp",
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "stylua",
+        "html-lsp",
+        "css-lsp",
+        "prettier",
+        "typescript-language-server",
+        "eslint-lsp",
+      },
     },
-    config = function()
-        require("codeium").setup({
-        })
-    end
   },
 
   {

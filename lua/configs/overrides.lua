@@ -3,7 +3,7 @@ local M = {}
 -- git support in nvimtree
 M.nvimtree = {
   filters = {
-    dotfiles = false,
+    dotfiles = true,
     custom = { "node_modules" },
   },
   view = {
