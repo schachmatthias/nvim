@@ -8,6 +8,7 @@ M.nvimtree = {
   },
   view = {
     side = "right",
+    adaptive_size = true,
   },
   git = {
     enable = true,

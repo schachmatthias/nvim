@@ -38,32 +38,4 @@ vim.schedule(function()
   require "mappings"
 end)
 
-vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = {
-    '*.tsx',
-    '*.ts',
-    '*.jsx',
-    '*.js',
-    '*.cjs',
-    '*.mjs',
-    '*.vue',
-    '*.json',
-  },
-  command = 'silent! EslintFixAll',
-})
 
-require 'lspconfig'.eslint.setup {
-  filetypes = {
-    "javascript",
-    "javascriptreact",
-    "javascript.jsx",
-    "typescript",
-    "typescriptreact",
-    "typescript.tsx",
-    "vue",
-    "svelte",
-    "astro",
-    "json",
-    "jsonc",
-  }
-}
