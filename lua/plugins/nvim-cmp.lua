@@ -14,7 +14,7 @@ return {
     end, { desc = "Options | Toggle Autocomplete" })
   end,
   config = function(_, opts)
- --   table.insert(opts.sources, 1, { name = "codeium" })
+    --   table.insert(opts.sources, 1, { name = "codeium" })
     table.insert(opts.sources, 1, { name = "supermaven" })
     table.insert(opts.sources, 1, { name = "codeium" })
 
@@ -79,14 +79,14 @@ return {
       "hrsh7th/cmp-cmdline",
     },
     -- AI Autocomplete
-   {
-    "Exafunction/codeium.nvim",
-     opts = {
-       enable_chat = true,
-     },
-   },
     {
-     "supermaven-inc/supermaven-nvim",
+      "Exafunction/codeium.nvim",
+      opts = {
+        enable_chat = true,
+      },
+    },
+    {
+      "supermaven-inc/supermaven-nvim",
       -- commit = "df3ecf7",
       event = "User FilePost",
       opts = {

@@ -1,15 +1,26 @@
 local overrides = require "configs/overrides"
 
 return {
-  -- {
-  --   "stevearc/conform.nvim",
-  --   -- event = 'BufWritePre', -- uncomment for format on save
-  --   config = function()
-  --     require "configs.conform"
-  --   end,
-  -- },
 
-  -- These are some examples, uncomment them if you want to see them work!
+  {
+    "stevearc/conform.nvim",
+    event = { "BufWritePre" },
+    cmd = { "ConformInfo" },
+    init = function()
+      vim.o.formatexpr = [[v:lua.require("conform").formatexpr()]]
+    end,
+    opts = {
+      formatters_by_ft = {
+        -- your formatters
+        lua = { "stylua" },
+      },
+      format_on_save = {
+        timeout_ms = 500,
+        lsp_fallback = true,
+      },
+    },
+  },
+
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -37,14 +48,4 @@ return {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
   },
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
 }
