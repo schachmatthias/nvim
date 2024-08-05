@@ -5,12 +5,14 @@
 local M = {}
 
 M.ui = {
-  theme = "ayu_dark",
-
-  -- hl_override = {
-  -- 	Comment = { italic = true },
-  -- 	["@comment"] = { italic = true },
-  -- },
+  theme = "decay",
+  transparency = true,
+  hl_override = {
+    Comment = {
+      italic = true,
+    },
+    ["@comment"] = { italic = true, fg = "#999999" },
+  },
 }
 
 return M
