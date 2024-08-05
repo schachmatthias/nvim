@@ -9,6 +9,7 @@ M.nvimtree = {
   view = {
     side = "right",
     adaptive_size = true,
+    relativenumber = true,
   },
   git = {
     enable = true,

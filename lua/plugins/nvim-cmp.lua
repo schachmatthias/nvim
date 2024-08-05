@@ -4,6 +4,8 @@ return {
   "hrsh7th/nvim-cmp",
   event = { "InsertEnter", "CmdlineEnter" },
   init = function()
+    vim.g.toggle_cmp = true
+
     vim.keymap.set("n", "<leader>oa", function()
       vim.g.toggle_cmp = not vim.g.toggle_cmp
       if vim.g.toggle_cmp then
