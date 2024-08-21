@@ -2,6 +2,7 @@ local M = {}
 
 -- git support in nvimtree
 M.nvimtree = {
+  on_attach = "default",
   filters = {
     dotfiles = true,
     custom = { "node_modules" },

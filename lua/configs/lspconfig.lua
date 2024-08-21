@@ -124,6 +124,14 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   command = "silent! EslintFixAll",
 })
 
+require("lspconfig").stylelint_lsp.setup {
+  settings = {
+    stylelintplus = {
+      autoFixOnSave = true,
+      validateOnSave = true,
+    },
+  },
+}
 -- Sets colors to line numbers Above, Current and Below  in this order
 function LineNumberColors()
   vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#51B3EC" })
