@@ -13,6 +13,8 @@ return {
       formatters_by_ft = {
         -- your formatters
         lua = { "stylua" },
+        scss = { "prettier" },
+        css = { "prettier" },
       },
       format_on_save = {
         timeout_ms = 500,
@@ -29,6 +31,13 @@ return {
     end,
   },
   --
+  -- {
+  --   "edluffy/hologram.nvim",
+  --   lazy = false,
+  --   opts = {
+  --     auto_display = true,
+  --   },
+  -- },
   {
     "williamboman/mason.nvim",
     opts = {
@@ -48,5 +57,9 @@ return {
     "nvim-tree/nvim-tree.lua",
     lazy = false,
     opts = overrides.nvimtree,
+  },
+  {
+    "sindrets/diffview.nvim",
+    lazy = false,
   },
 }
