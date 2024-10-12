@@ -4,8 +4,10 @@ return {
     lazy = false,
     config = function()
       require("auto-session").setup {
-        auto_save_enabled = true,
-        auto_session_suppress_dirs = { "~/", "~/coding-projects", "~/Downloads", "/" },
+        {
+          auto_save = true,
+          suppressed_dirs = { "~/", "~/coding-projects", "~/Downloads", "/" },
+        },
       }
     end,
   },

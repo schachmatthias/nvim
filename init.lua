@@ -11,6 +11,8 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
 local lazy_config = require "configs.lazy"
 
 -- load plugins
