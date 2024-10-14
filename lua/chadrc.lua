@@ -5,17 +5,17 @@
 local options = {
 
   base46 = {
-    theme = "falcon", -- default theme
+    theme = "poimandres", -- default theme
     hl_add = {},
     hl_override = {
       Comment = {
         italic = true,
-        fg = "dark_purple",
+        fg = "light_grey",
       },
 
       ["@comment"] = {
         italic = true,
-        fg = "dark_purple",
+        fg = "light_grey",
       },
     },
     integrations = {},

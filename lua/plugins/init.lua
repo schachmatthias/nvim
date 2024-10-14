@@ -14,6 +14,7 @@ return {
         lua = { "stylua" },
         scss = { "prettier" },
         css = { "prettier" },
+        html = { "prettier" },
       },
       format_on_save = {
         timeout_ms = 500,
@@ -60,5 +61,14 @@ return {
   {
     "sindrets/diffview.nvim",
     lazy = false,
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    ft = { "markdown" },
+    build = "cd app && npm install",
+    config = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+      vim.keymap.set("n", "<leader>mp", ":MarkdownPreviewToggle <CR>", {})
+    end,
   },
 }
