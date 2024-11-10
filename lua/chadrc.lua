@@ -5,7 +5,7 @@
 local options = {
 
   base46 = {
-    theme = "poimandres", -- default theme
+    theme = "tokyonight", -- default theme
     hl_add = {},
     hl_override = {
       Comment = {

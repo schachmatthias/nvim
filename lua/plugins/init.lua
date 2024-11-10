@@ -15,6 +15,8 @@ return {
         scss = { "prettier" },
         css = { "prettier" },
         html = { "prettier" },
+        markdown = { "prettier" },
+        python = { "black" },
       },
       format_on_save = {
         timeout_ms = 500,

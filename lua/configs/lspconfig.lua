@@ -132,6 +132,20 @@ require("lspconfig").stylelint_lsp.setup {
     },
   },
 }
+
+require("lspconfig").pylsp.setup {
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = { "W391" },
+          maxLineLength = 100,
+        },
+      },
+    },
+  },
+}
+
 -- Sets colors to line numbers Above, Current and Below  in this order
 function LineNumberColors()
   vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#51B3EC" })
