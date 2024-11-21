@@ -14,9 +14,11 @@ return {
         lua = { "stylua" },
         scss = { "prettier" },
         css = { "prettier" },
-        html = { "prettier" },
+ --       html = { "prettier" },
         markdown = { "prettier" },
         python = { "black" },
+        -- html = { "prettier" },
+        -- php = { "phpstan" },
       },
       format_on_save = {
         timeout_ms = 500,
@@ -32,6 +34,7 @@ return {
       require "configs.lspconfig"
     end,
   },
+
   --
   -- {
   --   "edluffy/hologram.nvim",
@@ -51,6 +54,7 @@ return {
         "prettier",
         "typescript-language-server",
         "eslint-lsp",
+        "intelephense",
       },
     },
   },
