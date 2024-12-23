@@ -18,7 +18,8 @@ return {
         markdown = { "prettier" },
         python = { "black" },
         -- html = { "prettier" },
-        -- php = { "phpstan" },
+         php = { "phpstan" },
+        javascript = { "prettier" },
       },
       format_on_save = {
         timeout_ms = 500,
