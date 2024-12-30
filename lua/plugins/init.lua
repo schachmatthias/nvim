@@ -14,11 +14,11 @@ return {
         lua = { "stylua" },
         scss = { "prettier" },
         css = { "prettier" },
- --       html = { "prettier" },
+        --       html = { "prettier" },
         markdown = { "prettier" },
         python = { "black" },
         -- html = { "prettier" },
-         php = { "phpstan" },
+        php = { "phpstan" },
         javascript = { "prettier" },
       },
       format_on_save = {
