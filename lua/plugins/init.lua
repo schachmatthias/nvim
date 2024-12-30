@@ -10,14 +10,12 @@ return {
     end,
     opts = {
       formatters_by_ft = {
-        -- your formatters
         lua = { "stylua" },
         scss = { "prettier" },
         css = { "prettier" },
         --       html = { "prettier" },
         markdown = { "prettier" },
         python = { "black" },
-        -- html = { "prettier" },
         php = { "phpstan" },
         javascript = { "prettier" },
       },
