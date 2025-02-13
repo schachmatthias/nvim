@@ -94,9 +94,9 @@ return {
         disable_keymaps = false,
         disable_inline_completion = false,
         keymaps = {
-          accept_suggestion = "<C-;>",
-          clear_suggestion = "<Nop>",
-          accept_word = "<C-y>",
+          accept_suggestion = "<C-a>",
+          clear_suggestion = "<C-d>",
+          accept_word = "<C-w>",
         },
       },
     },

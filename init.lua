@@ -43,3 +43,9 @@ end)
 -- custom keybinds
 
 vim.api.nvim_set_keymap("n", "<leader>do", ":DiffviewOpen<CR>", { noremap = true, silent = true })
+
+-- Enable list mode to show whitespace characters
+vim.o.list = true
+
+-- Customize the characters used to represent whitespace
+vim.o.listchars = "tab:▸\\ ,trail:·,extends:>,precedes:<,nbsp:␣"

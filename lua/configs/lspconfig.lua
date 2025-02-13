@@ -45,6 +45,34 @@ require("lspconfig").denols.setup {
 
   on_attach = on_attach,
 }
+<<<<<<< Updated upstream
+=======
+
+require("lspconfig").intelephense.setup {
+  on_attach = on_attach,
+  filetypes = { "php" },
+  cmd = { "intelephense", "--stdio" },
+  settings = {
+    intelephense = {
+      format = {
+        enable = false,
+      },
+      files = {
+        maxSize = 10000000,
+      },
+    },
+    php = {
+      validate = {
+        enable = true,
+        autoFix = true,
+      },
+      suggest = {
+        enable = true,
+      },
+    },
+  },
+}
+>>>>>>> Stashed changes
 require("lspconfig").ts_ls.setup {
   filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
   init_options = {
@@ -106,7 +134,10 @@ require("lspconfig").eslint.setup {
     "vue",
     "svelte",
     "astro",
+<<<<<<< Updated upstream
     "json",
+=======
+>>>>>>> Stashed changes
     "jsonc",
   },
 }
