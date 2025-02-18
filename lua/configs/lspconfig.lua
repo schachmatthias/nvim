@@ -46,6 +46,11 @@ require("lspconfig").denols.setup {
   on_attach = on_attach,
 }
 
+require("lspconfig").glsl_analyzer.setup {
+  on_attach = on_attach,
+  filetypes = { "glsl" },
+}
+
 require("lspconfig").intelephense.setup {
   on_attach = on_attach,
   filetypes = { "php" },

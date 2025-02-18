@@ -4,7 +4,8 @@ local M = {}
 M.nvimtree = {
   on_attach = "default",
   filters = {
-    dotfiles = true,
+    dotfiles = false,
+    git_ignored = false,
     custom = { "node_modules" },
   },
   view = {

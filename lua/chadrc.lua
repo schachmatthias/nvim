@@ -5,7 +5,7 @@
 local options = {
 
   base46 = {
-    theme = "falcon", -- default theme
+    theme = "dark_horizon", -- default theme
     hl_add = {},
     hl_override = {
       Comment = {

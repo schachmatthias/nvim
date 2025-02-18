@@ -13,7 +13,6 @@ return {
         lua = { "stylua" },
         scss = { "prettier" },
         css = { "prettier" },
-        --       html = { "prettier" },
         markdown = { "prettier" },
         python = { "black" },
         php = { "phpstan" },
