@@ -46,7 +46,7 @@ return {
         end, { desc = "Treesitter | Jumping to context (upwards)", silent = true })
       end,
       opts = {
-        enable = true,
+        enable = false, -- disabled cause messes up line numbers
       },
     },
   },
@@ -83,7 +83,7 @@ return {
       "json",
     },
     indent = {
-      enable = false,
+      enable = true,
     },
     textobjects = {
       swap = {
