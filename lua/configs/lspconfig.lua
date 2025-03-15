@@ -174,11 +174,11 @@ require("lspconfig").pylsp.setup {
 }
 
 -- Sets colors to line numbers Above, Current and Below  in this order
-function setCustomColors()
+function SetCustomColors()
   vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#51B3EC" })
   vim.api.nvim_set_hl(0, "LineNr", { fg = "white", bold = true })
   vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#FB508F" })
   vim.api.nvim_set_hl(0, "DiagnosticError", { bg = "#000000", fg = "#FFA500" })
 end
 
-setCustomColors()
+SetCustomColors()
