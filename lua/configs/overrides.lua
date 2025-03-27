@@ -6,7 +6,7 @@ M.nvimtree = {
   filters = {
     dotfiles = false,
     git_ignored = false,
-    custom = { "node_modules" },
+    -- custom = { "node_modules" },
   },
   view = {
     side = "right",
