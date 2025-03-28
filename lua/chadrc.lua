@@ -18,9 +18,7 @@ local options = {
         fg = "light_grey",
       },
     },
-    integrations = {},
     transparency = true,
-    theme_toggle = { "onedark", "one_light" },
   },
 
   ui = {
@@ -51,19 +49,6 @@ local options = {
 
     nvdash = {
       load_on_startup = false,
-
-      header = {
-        "           ▄ ▄                   ",
-        "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
-        "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
-        "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
-        "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
-        "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
-        "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
-        "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
-        "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
-      },
-
       buttons = {
         { "  Find File", "Spc f f", "Telescope find_files" },
         { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
@@ -76,7 +61,7 @@ local options = {
   },
 
   term = {
-    winopts = { number = false, relativenumber = false },
+    winopts = { number = false, relativenumber = true },
     sizes = { sp = 0.3, vsp = 0.2, ["bo sp"] = 0.3, ["bo vsp"] = 0.2 },
     float = {
       relative = "editor",
