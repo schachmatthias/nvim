@@ -5,7 +5,7 @@
 local options = {
 
   base46 = {
-    theme = "mito-laser", -- default theme
+    theme = "blossom_light", -- default theme
     hl_add = {},
     hl_override = {
       Comment = {
