@@ -132,7 +132,6 @@ require("lspconfig").eslint.setup {
     "vue",
     "svelte",
     "astro",
-    "json",
     "jsonc",
   },
 }
@@ -145,7 +144,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     "*.cjs",
     "*.mjs",
     "*.vue",
-    "*.json",
   },
   command = "silent! EslintFixAll",
 })
