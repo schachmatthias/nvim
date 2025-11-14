@@ -5,7 +5,7 @@
 local options = {
 
   base46 = {
-    theme = "blossom_light", -- default theme
+    theme = "decay", -- default theme
     hl_add = {},
     hl_override = {
       Comment = {

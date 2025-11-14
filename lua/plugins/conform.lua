@@ -15,9 +15,11 @@ return {
         python = { "black" },
         php = { "phpstan" },
         -- javascript = { "prettier" },
+        -- vue = { "prettier" },
+        -- typescript = { "prettier" },
       },
       format_on_save = {
-        timeout_ms = 500,
+        timeout_ms = 2000,
         lsp_fallback = true,
       },
     },
